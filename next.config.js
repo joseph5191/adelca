@@ -1,6 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+require("dotenv").config();
+const webpack = require("webpack");
 
-module.exports = nextConfig
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  reactStrictMode: true,
+  generateEtags: false,
+
+  webpack: (config) => {
+    config.plugins.push(new webpack.EnvironmentPlugin(process.env));
+
+    return config;
+  },
+};

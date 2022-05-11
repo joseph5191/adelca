@@ -6,7 +6,7 @@ import styles from "../nav/Navbar.module.css";
 export default function Navbar() {
   
   return (
-    <>
+  
       <div className="navigation-wrap  start-header start-style bg-nav">
         <div className="container">
           <div className="row">
@@ -78,9 +78,12 @@ export default function Navbar() {
                         ></i>
                       </a>
                       <div className="dropdown-menu">
-                        <a className="dropdown-item" href="#">
+                        <Link href='documents-controls'>
+                        <a className="dropdown-item" >
                           Control documentación
                         </a>
+                        </Link>
+                        
                         <a className="dropdown-item" href="#">
                           Administración campos: Conductores
                         </a>
@@ -130,9 +133,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="container content">
-        <p className="text-dark">ssdfsdfsdfsdfdfsd</p>
-      </div>
-    </>
+      
+    
   );
 }

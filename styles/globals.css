@@ -542,10 +542,10 @@ h1 span:nth-child(15){
 
 .content{
 	height: 100vh;
-	background: red;
+	/* background: red; */
 	display: flex;
-	
-	margin-top: 100px;
+	/* flex-direction: row; */
+	margin-top: 180px;
 }
 
 
@@ -556,3 +556,9 @@ h1 span:nth-child(15){
 .text-color:hover{
   color:white !important
 }
+
+.poiter{
+	cursor:pointer;
+}
+
+

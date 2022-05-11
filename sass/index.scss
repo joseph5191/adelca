@@ -1,0 +1,43 @@
+
+.darken-grey-text {
+    color: #2E2E2E;
+}
+.bc-icons .breadcrumb-item + .breadcrumb-item::before {
+    content: none; }
+.bc-icons .breadcrumb-item.active {
+    color: #5c5a5a; }
+
+
+.breadcrumb{
+    background: white !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.title-modal{
+    background: #002060;
+    color: white;
+}
+.btn-close{
+    color: red !important;
+    background-color: red;
+}
+
+.bg-nav{
+    color:white;
+}
+
+.drop{
+   color:white !important;
+   outline: none !important;
+   border: none !important;
+   all: unset;
+    
+}
+
+.drop:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
